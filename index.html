@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解谜游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="question1">
+            <p>如果昨天是明天的话就好了，那么今天就是周五了。请问句子中的今天是周几？</p>
+            <input type="text" id="answer1">
+            <button onclick="checkAnswer1()">提交</button>
+        </div>
+        
+        <div id="question2" style="display: none;">
+            <p>在你认识的人中，你最喜欢的年龄相仿的男生叫什么名字？</p>
+            <input type="text" id="answer2">
+            <button onclick="checkAnswer2()">提交</button>
+        </div>
+        
+        <div id="reward" style="display: none;">
+            <p>恭喜你获得支付宝口令红包！保存好数字哦:</p>
+            <span id="rewardNumber"></span>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+
+</html>
